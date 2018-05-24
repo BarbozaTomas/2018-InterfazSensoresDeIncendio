@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14882,25 +14882,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="5.08" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="T2" gate="G$1" pin="C"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="81.28" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="B"/>
 <wire x1="5.08" y1="119.38" x2="7.62" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="T1" gate="G$1" pin="C"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="124.46" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSOR1" class="0">
@@ -14909,12 +14895,28 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="104.14" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
 <label x="111.76" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="T1" gate="G$1" pin="C"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="124.46" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
+<label x="20.32" y="124.46" size="1.778" layer="95"/>
+<junction x="12.7" y="124.46"/>
+<wire x1="12.7" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SENSOR2" class="0">
 <segment>
 <pinref part="MICRO" gate="G$1" pin="19"/>
 <wire x1="104.14" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 <label x="111.76" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="T2" gate="G$1" pin="C"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="81.28" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<label x="20.32" y="81.28" size="1.778" layer="95"/>
+<junction x="12.7" y="81.28"/>
+<wire x1="12.7" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSOR3" class="0">
