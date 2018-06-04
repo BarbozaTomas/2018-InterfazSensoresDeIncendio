@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14435,7 +14435,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="MICRO" library="ic-package" deviceset="DIL20" device=""/>
+<part name="MICRO" library="ic-package" deviceset="DIL20" device="" value="SH8"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
@@ -14443,11 +14443,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="05" value="LM2940"/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="CENTRAL" library="con-ptr500" deviceset="AK300/4" device=""/>
+<part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="A4"/>
+<part name="CENTRAL" library="con-ptr500" deviceset="AK300/4" device="" value="central"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="SENSOR" library="con-ptr500" deviceset="AK300/4" device=""/>
-<part name="SV1" library="con-lstb" deviceset="MA03-2" device=""/>
+<part name="SENSOR" library="con-ptr500" deviceset="AK300/4" device="" value="sensor"/>
+<part name="SV1" library="con-lstb" deviceset="MA03-2" device="" value="BDM"/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="4,7k-10k"/>
@@ -14644,6 +14644,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="C9" gate="G$1" pin="-"/>
 <wire x1="-10.16" y1="157.48" x2="-17.78" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="157.48" x2="-17.78" y2="160.02" width="0.1524" layer="91"/>
+<junction x="15.24" y="157.48"/>
+<junction x="-10.16" y="157.48"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="1" pin="2"/>
@@ -14674,8 +14676,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="MICRO" gate="G$1" pin="4"/>
 <wire x1="88.9" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="101.6" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="99.06" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -14921,17 +14922,17 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="SENSOR3" class="0">
 <segment>
-<pinref part="MICRO" gate="G$1" pin="18"/>
-<wire x1="104.14" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="111.76" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="T3" gate="G$1" pin="C"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="35.56" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
 <label x="20.32" y="35.56" size="1.778" layer="95"/>
 <wire x1="12.7" y1="35.56" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
 <junction x="12.7" y="35.56"/>
+</segment>
+<segment>
+<pinref part="MICRO" gate="G$1" pin="18"/>
+<wire x1="104.14" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<label x="111.76" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CONTROL485" class="0">
