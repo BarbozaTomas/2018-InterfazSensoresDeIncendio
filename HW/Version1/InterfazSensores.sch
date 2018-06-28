@@ -14450,7 +14450,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="BDM" library="con-lstb" deviceset="MA03-2" device="" value="BDM"/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="4,7k-10k"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
@@ -14458,8 +14458,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="IC2" library="linear-technology" deviceset="LTC485" device="S"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="120"/>
-<part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
